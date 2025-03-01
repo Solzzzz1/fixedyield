@@ -10205,7 +10205,7 @@ end)
 addcmd('explorer', {'dex'}, function(args, speaker)
 	notify('Loading', 'Wait a bit')
 	--
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Solzzzz1/fixedyield/refs/heads/master/DEX.lua"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/SNceG8Cj"))()
 end)
 
 addcmd('olddex', {'odex'}, function(args, speaker)
