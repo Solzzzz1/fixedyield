@@ -1,3 +1,5 @@
+--// changes: fixes dex explorer "Fetching API" loop
+
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Infinite Yield is already running!", 0)
     return
@@ -10201,12 +10203,13 @@ addcmd('oldconsole',{},function(args, speaker)
 end)
 
 addcmd('explorer', {'dex'}, function(args, speaker)
-	notify('Loading', 'Hold on a sec')
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+	notify('Loading', 'Wait a bit')
+	--
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Solzzzz1/fixedyield/refs/heads/master/DEX.lua"))()
 end)
 
 addcmd('olddex', {'odex'}, function(args, speaker)
-	notify('Loading old explorer', 'Hold on a sec')
+	notify('Loading old explorer', 'hold on a sec [THIS ONE CAN HAVE ERRORS]')
 
 	local getobjects = function(a)
 		local Objects = {}
