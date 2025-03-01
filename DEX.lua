@@ -11426,7 +11426,7 @@ Main = (function()
 					Main.RobloxVersion = Main.DepsVersionData[2]
 				end
 			end
-			Main.RobloxVersion = Main.RobloxVersion or oldgame:HttpGet(_G.FixedURL .. "/".. versionQTStudio")
+			Main.RobloxVersion = Main.RobloxVersion or oldgame:HttpGet(_G.FixedURL .. "/".. "versionQTStudio")
 		end
 
 		-- Fetch external deps
